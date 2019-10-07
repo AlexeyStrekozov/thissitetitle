@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 12px;
+  padding: 0 22px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #0777ba;
+}
+
+.header-button {
+  background-color: #fff;
+  padding: 6px 23px;
+  border: 2px solid #0777ba;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-left: -3px;
+  color: #0777ba;
+}
+
+.header-logo {
+  margin-left: -58px;
+}
+
+.header-help {
+  font-weight: 400;
+  margin-top: 12px;
+}
+/*# sourceMappingURL=main.css.map */
