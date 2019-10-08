@@ -1,5 +1,6 @@
 .header
     &-wrap
+        position: relative
         display: flex
         justify-content: space-between
         flex-wrap: wrap
@@ -20,8 +21,53 @@
         margin-top: 4px
         margin-left: -3px
         color: #0777ba
+        transition: 0.4s
+        &:hover
+            cursor: pointer
+            color: #ffffff
+            background-color: #0777ba
     &-logo
         margin-left: -58px
     &-help
         font-weight: 400
         margin-top: 12px
+        transition: 0.4s
+        &:hover
+            cursor: pointer
+            text-decoration: underline
+        &__popUP
+            display: none
+            width: 235px
+            position: absolute
+            right: 21px
+            background-color: #ffffff
+            padding: 6px 0
+            top: 47px
+            box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
+            -webkit-box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
+            -moz-box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
+            &::before
+                content: ''
+                position: absolute
+                right: 23px
+                top: -22px
+                border: 12px solid transparent
+                border-top: 12px solid #fff
+                -moz-transform: rotate(180deg)
+                -ms-transform: rotate(180deg)
+                -webkit-transform: rotate(180deg)
+                -o-transform: rotate(180deg)
+                transform: rotate(180deg)
+            ul 
+                a
+                    color: #0777ba
+                li
+                    list-style: none
+                    padding: 12px 20px
+                    margin-bottom: 10px
+                    margin-bottom: 3px
+                    transition: 0.4s
+                    &:hover
+                        text-decoration: underline
+                        background-color: #e6ecf1
+                        
