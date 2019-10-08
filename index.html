@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/wickedcss.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap" rel="stylesheet">
     <title>thissitetitle</title>
 </head>
@@ -13,23 +14,25 @@
         <div class="header-wrap">
             <input class="header-button" type="button" value="Войти">
             <div class="header-logo"><img src="img/header/logo.png" alt="логотип"></div>
-            <div class="header-help">Помощь</div>
-            <div class="header-help__popUP">
-                <ul>
-                    <a href="#"><li>Как это работает</li></a>
-                    <a href="#"><li>Вопрос-ответ</li></a>
-                    <a href="#"><li>Служба поддержки</li></a>
-                </ul>
+            <div class="header-help">
+                Помощь
+                <div class="header-help__popUP">
+                    <ul>
+                        <a href="#"><li>Как это работает</li></a>
+                        <a href="#"><li>Вопрос-ответ</li></a>
+                        <a href="#"><li>Служба поддержки</li></a>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
-    <section class="search">
+    <section class="search  ">
         <div class="container">
-            <div class="search-wrap">
+            <div class="search-wrap zoomer">
                 <h1>Поиск начислений</h1>
-                <div class="row">
+                <div class="row ">
                     <input class="search-wrap__text" type="text" placeholder="Введите данные для поиска">
-                    <input class="search-wrap__button" type="button" value="Найти">
+                    <input class="search-wrap__button" type="button" value="Найти" >
                 </div>
                 <div class="search-subbtitle">Чем больше параметров введено, тем полнее результаты поиска</div>
             </div>
@@ -53,7 +56,7 @@
         <div class="container">
             <div class="row">
                 <div class="payment-block__text">
-                    <h1>Штрафы ГИБДД</h1>
+                    <h1 class="wiggle animated">Штрафы ГИБДД</h1>
                     <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа.</p>
                     <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
                     <h2>платить Вовремя — дешевле!</h2>
@@ -61,21 +64,20 @@
                     <div class="payment-block__text__link"><a href="">Пошлины ГИБДД</a></div>
                     <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.</p>
                 </div>
-                <div class="payment-block__img"><img src="img/Layer 5.png" alt=""></div>
+                <div class="payment-block__img slideLeft"><img src="img/Layer 5.png" alt=""></div>
             </div>
         </div>
     </section>
     <section id="block2" class="payment-block payment-block-right">
             <div class="container">
                 <div class="row">
-                    <div class="payment-block-right__img__right"><img src="img/Layer 6.jpg" alt=""></div>
+                    <div class="payment-block-right__img__right slideRight"><img src="img/Layer 6.jpg" alt=""></div>
                     <div class="payment-block__text payment-block__text__right">
                         <h1>Судебные задолженности</h1>
                         <p>Для поиска начислений в ГИС ГМП укажите документы: <br>паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
                         <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
                         <h2>Удобно!</h2>
                         <p>Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
-                      
                     </div>
                 </div>
             </div>
@@ -201,5 +203,18 @@
             </div>
         </div>
     </footer>
+    <div class="popUp">
+        <div class="popUp-block">
+            <div class="popUp-block__form">
+                <div class="popUp-close">&#10006;</div>
+                <label for="login_field">Имя пользывателя</label>
+                <input class="popUp-block__form__control" id="login_field" type="text">
+                <label for="password">Пароль</label>
+                <input class="popUp-block__form__control" type="password" name="" id="password">
+                <input class="popUp-block__form__in" type="button" value="Вход">
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>

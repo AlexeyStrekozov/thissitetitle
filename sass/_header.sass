@@ -1,4 +1,10 @@
 .header
+    top: 0
+    position: fixed
+    width: 100%
+    background: #fff
+    z-index: 999
+    border-bottom: 1px solid #cedae4
     &-wrap
         position: relative
         display: flex
@@ -33,7 +39,7 @@
     &-help
         font-weight: 400
         margin-top: 12px
-        transition: 0.4s
+        padding-bottom: 16px
         &:hover
             cursor: pointer
             text-decoration: underline
@@ -48,6 +54,7 @@
             box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
             -webkit-box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
             -moz-box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
+            animation: close 0.6s
             &::before
                 content: ''
                 position: absolute
