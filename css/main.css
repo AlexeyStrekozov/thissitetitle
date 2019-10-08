@@ -316,4 +316,65 @@ body {
   font-weight: 700;
   width: 131px;
 }
+
+.footer {
+  background-color: #e6ecf1;
+  padding: 39px 36px;
+}
+
+.footer-wrap {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer ul li {
+  position: relative;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 15px;
+  list-style: none;
+  padding-bottom: 14px;
+}
+
+.footer a {
+  color: #0677b9;
+  text-decoration: underline;
+}
+
+.footer-about__text {
+  font-size: 15px;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
+}
+
+.footer-about__logo {
+  margin-top: 64px;
+}
+
+.footer-about__right {
+  text-align: right;
+}
+
+.footer-about__right__img {
+  margin-top: 19px;
+  margin-right: -7px;
+}
+
+.footer-phone {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 12px;
+  margin-left: -52px;
+}
+
+.footer-phone__number {
+  font-size: 24px;
+}
+
+.footer-phone ul {
+  margin-top: 20px;
+}
+
+.footer-phone ul li {
+  margin-left: 0;
+}
 /*# sourceMappingURL=main.css.map */
