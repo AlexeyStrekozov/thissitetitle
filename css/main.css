@@ -8,7 +8,6 @@ a {
 }
 
 body {
-  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -36,12 +35,14 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 12px;
   padding: 0 22px;
   font-family: 'PT Sans Caption', sans-serif;
   font-size: 15px;
   font-weight: 400;
   color: #0777ba;
+  max-width: 1235px;
+  margin: 0 auto;
+  margin-top: 12px;
 }
 
 .header-button {
@@ -125,7 +126,10 @@ body {
 .search {
   margin-top: 9px;
   height: 360px;
+  background-color: #528cc1;
   background-image: url("../img/bk.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .search-wrap__text {
@@ -323,9 +327,11 @@ body {
 }
 
 .footer-wrap {
+  max-width: 1210px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 .footer ul li {
