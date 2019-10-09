@@ -14,8 +14,18 @@
         <div class="header-wrap">
             <input class="header-button" type="button" value="Войти">
             <div class="header-logo"><img src="img/header/logo.png" alt="логотип"></div>
-            <div class="header-help">
+            <div class="header-help hiddne">
                 Помощь
+                <div class="header-help__popUP">
+                    <ul>
+                        <a href="#"><li>Как это работает</li></a>
+                        <a href="#"><li>Вопрос-ответ</li></a>
+                        <a href="#"><li>Служба поддержки</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-help__mini">
+                &#9776;
                 <div class="header-help__popUP">
                     <ul>
                         <a href="#"><li>Как это работает</li></a>
@@ -30,9 +40,10 @@
         <div class="container">
             <div class="search-wrap zoomer">
                 <h1>Поиск начислений</h1>
-                <div class="row ">
+                <div class="row mobile-row">
                     <input class="search-wrap__text" type="text" placeholder="Введите данные для поиска">
-                    <input class="search-wrap__button" type="button" value="Найти" >
+                    <input class="search-wrap__button hiddne" type="button" value="Найти" >
+                    <div class="search-mobile-img"><img src="img/search-icon.png" alt=""></div>
                 </div>
                 <div class="search-subbtitle">Чем больше параметров введено, тем полнее результаты поиска</div>
             </div>
@@ -40,7 +51,7 @@
     </section>
     <section class="payment">
         <div class="container">
-            <div class="payment-nav">
+            <div class="payment-nav hiddne">
                 <h1>Здесь можно оплатить</h1>
                 <div class="payment-nav-wrap">
                         <a href="#block1">Штрафы и пошлины ГИБДД </a>
@@ -50,13 +61,18 @@
                         <span>и другие услуги</span>
                 </div>
             </div>
+            <h1 class="payment-title-mobile">Узнайте, как оплатить</h1>
         </div>
     </section>
     <section id="block1" class="payment-block">
         <div class="container">
             <div class="row">
-                <div class="payment-block__text">
-                    <h1 class="wiggle animated">Штрафы ГИБДД</h1>
+                <div class="payment-block__text__mobile">                     
+                    <img class="payment-block__text__icon" src="img/Shape 1.png" alt="">
+                    <h1>Штрафы ГИБДД</h1>
+                </div>
+                <div class="payment-block__text ">
+                    <h1 class="hidden">Штрафы ГИБДД</h1>
                     <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа.</p>
                     <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
                     <h2>платить Вовремя — дешевле!</h2>
@@ -64,7 +80,7 @@
                     <div class="payment-block__text__link"><a href="">Пошлины ГИБДД</a></div>
                     <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.</p>
                 </div>
-                <div class="payment-block__img slideLeft"><img src="img/Layer 5.png" alt=""></div>
+                <div class="payment-block__img"><img src="img/Layer 5.png" alt=""></div>
             </div>
         </div>
     </section>
@@ -72,8 +88,12 @@
             <div class="container">
                 <div class="row">
                     <div class="payment-block-right__img__right slideRight"><img src="img/Layer 6.jpg" alt=""></div>
-                    <div class="payment-block__text payment-block__text__right">
+                    <div class=" payment-block__text__mobile">                     
+                        <img class="payment-block__text__icon" src="img/Shape 4.png" alt="">
                         <h1>Судебные задолженности</h1>
+                    </div>
+                    <div class="payment-block__text payment-block__text__right">
+                        <h1 class="hidden">Судебные задолженности</h1>
                         <p>Для поиска начислений в ГИС ГМП укажите документы: <br>паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
                         <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
                         <h2>Удобно!</h2>
@@ -85,8 +105,12 @@
     <section id="block3" class="payment-block">
         <div class="container">
             <div class="row">
-                <div class="payment-block__text payment-block__text__left">
+                <div class="payment-block__text__mobile">                     
+                    <img class="payment-block__text__icon" src="img/Shape 5.png" alt="">
                     <h1>Налоги </h1>
+                </div>
+                <div class="payment-block__text payment-block__text__left">
+                    <h1 class="hidden">Налоги </h1>
                     <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
                             Индекс налогового документа, усли у вас на руках есть квитанция.</p>
                     <h2>Важно!</h2>
@@ -100,8 +124,12 @@
             <div class="container">
                 <div class="row">
                     <div class="payment-block-right__img__right"><img src="img/Layer 8.png" alt=""></div>
-                    <div class="payment-block__text payment-block__text__right">
+                    <div class="payment-block__text__mobile">                     
+                        <img class="payment-block__text__icon" src="img/Shape 6.png" alt="">
                         <h1>Услуги Росреестра</h1>
+                    </div>
+                    <div class="payment-block__text payment-block__text__right">
+                        <h1 class="hidden">Услуги Росреестра</h1>
                         <p>В поисковой строке укажите Код платежа, который был отправлен вам <br>
                         на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
                         <h2>нет кода?</h2>
@@ -140,7 +168,7 @@
             </div>
             <div class="partners-block">
                 <div class="partners-block__img">
-                    <img src="img/Vector Smart Object4.png" alt="">
+                    <img class="object4" src="img/Vector Smart Object4.png" alt="">
                 </div>
                 <div class="partners-block__name">
                    Название партнера 4
@@ -176,7 +204,7 @@
                     <img src="img/footerimg1.png" alt="">
                 </div>
             </div>
-            <div class="footer-nav">
+            <div class="footer-nav hiddne">
                 <ul>
                     <li><a href="#">О сервисе</a></li>
                     <li><a href="#">Способы оплаты</a></li>
@@ -185,8 +213,8 @@
                     <li><a href="#">Cтатьи и новости</a></li>
                 </ul>
             </div>
-            <div class="footer-phone">
-                <a class="footer-phone__number" href="tel:88001234567">8 800 123 4567</a><br>
+            <div class="footer-phone hiddne">
+                <a class="footer-phone__number " href="tel:88001234567">8 800 123 4567</a><br>
                 звонок по России бесплатный
                     <ul>
                         <li><a href="#">Обратная связь</a></li>
