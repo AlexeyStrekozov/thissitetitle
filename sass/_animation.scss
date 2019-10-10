@@ -6,3 +6,24 @@
         opacity: 1;
     }
 }
+
+@keyframes checkOutRight {
+    from {
+        right: -200px;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes OutRight {
+    from {
+        right: 0;
+    }
+    50% {
+        right: -200px;
+    }
+    to {
+        display: none;
+    }
+}

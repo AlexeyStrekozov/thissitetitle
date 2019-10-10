@@ -12,7 +12,7 @@
 <body>
     <header class="header">
         <div class="header-wrap">
-            <input class="header-button" type="button" value="Войти">
+            <input class="header-button hidden-xs" type="button" value="Войти">
             <div class="header-logo"><img src="img/header/logo.png" alt="логотип"></div>
             <div class="header-help hiddne">
                 Помощь
@@ -26,13 +26,15 @@
             </div>
             <div class="header-help__mini">
                 &#9776;
-                <div class="header-help__popUP">
-                    <ul>
-                        <a href="#"><li>Как это работает</li></a>
-                        <a href="#"><li>Вопрос-ответ</li></a>
-                        <a href="#"><li>Служба поддержки</li></a>
-                    </ul>
-                </div>
+              
+            </div>
+            <div class="header-help__popUP__mini">
+                <div class="header-help__popUP__mini__close">&#10006;</div>
+                <ul>
+                    <a href="#"><li>Как это работает</li></a>
+                    <a href="#"><li>Вопрос-ответ</li></a>
+                    <a href="#"><li>Служба поддержки</li></a>
+                </ul>
             </div>
         </div>
     </header>
@@ -45,7 +47,7 @@
                     <input class="search-wrap__button hiddne" type="button" value="Найти" >
                     <div class="search-mobile-img"><img src="img/search-icon.png" alt=""></div>
                 </div>
-                <div class="search-subbtitle">Чем больше параметров введено, тем полнее результаты поиска</div>
+                <div class="search-subbtitle hidden-xs">Чем больше параметров введено, тем полнее результаты поиска</div>
             </div>
         </div>
     </section>
@@ -72,7 +74,7 @@
                     <h1>Штрафы ГИБДД</h1>
                 </div>
                 <div class="payment-block__text ">
-                    <h1 class="hidden">Штрафы ГИБДД</h1>
+                    <h1 class="hidden hidden-xs">Штрафы ГИБДД</h1>
                     <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа.</p>
                     <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
                     <h2>платить Вовремя — дешевле!</h2>
@@ -93,7 +95,7 @@
                         <h1>Судебные задолженности</h1>
                     </div>
                     <div class="payment-block__text payment-block__text__right">
-                        <h1 class="hidden">Судебные задолженности</h1>
+                        <h1 class="hidden hidden-xs">Судебные задолженности</h1>
                         <p>Для поиска начислений в ГИС ГМП укажите документы: <br>паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
                         <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
                         <h2>Удобно!</h2>
@@ -110,7 +112,7 @@
                     <h1>Налоги </h1>
                 </div>
                 <div class="payment-block__text payment-block__text__left">
-                    <h1 class="hidden">Налоги </h1>
+                    <h1 class="hidden hidden-xs">Налоги </h1>
                     <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
                             Индекс налогового документа, усли у вас на руках есть квитанция.</p>
                     <h2>Важно!</h2>
@@ -129,7 +131,7 @@
                         <h1>Услуги Росреестра</h1>
                     </div>
                     <div class="payment-block__text payment-block__text__right">
-                        <h1 class="hidden">Услуги Росреестра</h1>
+                        <h1 class="hidden hidden-xs">Услуги Росреестра</h1>
                         <p>В поисковой строке укажите Код платежа, который был отправлен вам <br>
                         на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
                         <h2>нет кода?</h2>
@@ -197,8 +199,9 @@
         <div class="row footer-wrap ">
             <div class="footer-about">
                 <div class="footer-about__text">
-                       <div>© 2012–2018</div>
-                        ООО «Название компании»
+                        <div class="hidden-xs">© 2012–2018</div>
+                        <span class="fullhidden">© 2012–2018</span> ООО «Название компании»
+                        <span class="fullhidden">Дополнительные ссылки и копирайты ООО «Фирма 2»</span>
                 </div>
                 <div class="footer-about__logo">
                     <img src="img/footerimg1.png" alt="">
@@ -221,7 +224,7 @@
                         <li><a href="#">Мы вКонтакте</a></li>
                     </ul>
             </div>
-            <div class="footer-about footer-about__right">
+            <div class="footer-about footer-about__right hidden-xs">
                 <div class="footer-about__text footer-about__right">
                         Дополнительные ссылки <br>и копирайты ООО «Фирма 2»
                 </div>

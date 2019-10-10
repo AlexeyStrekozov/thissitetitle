@@ -5,6 +5,7 @@
     background: #fff
     z-index: 999
     border-bottom: 1px solid #cedae4
+    padding-bottom: 8px
     &-wrap
         position: relative
         display: flex
@@ -57,6 +58,47 @@
             -webkit-box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
             -moz-box-shadow: 0px -2px 5px 5px rgba(245,245,246,1)
             animation: close 0.6s
+            &__mini
+                display: none
+                width: 200px
+                height: 100vh
+                position: absolute
+                right: 0
+                background-color: #ffffff
+                padding: 6px 0
+                top: -2px
+                box-shadow: 0px -2px 5px 5px #f5f5f6
+                -webkit-box-shadow: 0px -2px 5px 5px #f5f5f6
+                -moz-box-shadow: 0px -2px 5px 5px #f5f5f6
+                -webkit-animation: checkOutRight 0.6s
+                animation: checkOutRight 0.6s
+                &__close
+                    position: absolute
+                    left: 15px
+                    top: 10px
+                    cursor: pointer
+                & ul 
+                    margin-top: 30px
+                    & li 
+                        border-bottom: 1px solid #cedae4;
+                        position: relative
+                        display: -webkit-box
+                        display: -ms-flexbox
+                        display: flex
+                        -webkit-box-pack: justify
+                        -ms-flex-pack: justify
+                        justify-content: space-between
+                        -ms-flex-wrap: wrap
+                        flex-wrap: wrap
+                        -webkit-box-align: start
+                        -ms-flex-align: start
+                        align-items: flex-start
+                        padding: 10px 22px
+                        font-family: 'PT Sans Caption', sans-serif
+                        font-size: 15px
+                        font-weight: 400
+                        color: #0777ba
+                        margin: 0 auto
             &::before
                 content: ''
                 position: absolute

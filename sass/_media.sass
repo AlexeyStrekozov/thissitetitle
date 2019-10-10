@@ -1,4 +1,6 @@
-@media (max-width: 992px) 
+@media (max-width: 992px)
+    .fullhidden
+        display: none 
     .container
         width: 720px
     .partners 
@@ -11,6 +13,8 @@
             &__name
                 margin: 0 auto
 @media (max-width: 768px)
+    .fullhidden
+        display: none
     .mobile-row
         display: flex
         position: relative
@@ -50,7 +54,7 @@
         &-mobile-img
             display: block  
             position: absolute
-            right: 35px
+            right: 62px
             top: 17px
     #block1 
         border-top: 1px solid #cedae4;
@@ -78,6 +82,7 @@
                     h1
                         font-size: 20px
                         font-weight: 400
+                        width: 100%
                 &__icon
                     display: block
                     float: left
@@ -102,3 +107,49 @@
         padding-top: 40px
         &-block
             padding-top: 31px
+@media (max-width: 576px)
+    .fullhidden
+        display: inline
+    .hidden-xs
+        display: none
+    .header
+        &-wrap
+            padding:  0 12px
+        &-logo
+            width: 173px
+            margin-left: 0
+    .search
+        height: 235px
+        padding: 0 12px
+        &-wrap
+            h1
+                font-size: 21px
+                margin-bottom: 26px
+            &__text
+                font-size: 14px
+                padding: 12px 22px
+        &-mobile-img
+            right: 28px
+            top: 10px
+    .payment
+        &-block
+            padding:  0 12px
+            &__text
+                &__mobile
+                    margin: 0 0
+                    width: 100%
+                    padding: 5px 0
+                    align-items: center
+                    & h1
+                        font-size: 18px
+        &-title-mobile
+            font-size: 21px
+    .partners
+        padding-top: 27px
+        &-block
+            width: 160px
+    .footer
+        padding: 11px 12px
+        &-about__logo
+            width: 80px 
+            margin: 22px auto 10px
